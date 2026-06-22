@@ -24,7 +24,7 @@ except ImportError:
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s: %(message)s', stream=sys.stderr)
 
 API = "https://api.github.com"
-mcp = FastMCP("github-extended", version="1.0.0")
+mcp = FastMCP("github-extended")
 
 def _headers():
     token = os.environ.get("GITHUB_TOKEN", "").strip()
